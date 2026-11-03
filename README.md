@@ -4,6 +4,7 @@
 ![Redes](https://img.shields.io/badge/Redes-Computadores-green)
 ![Sistemas Operacionais](https://img.shields.io/badge/Sistemas%20Operacionais-SO-orange)
 ![IoT](https://img.shields.io/badge/IoT-Arduino-red)
+![Arquitetura](https://img.shields.io/badge/Arquitetura-Computadores-purple)
 
 ## 1. Sobre o projeto
 
