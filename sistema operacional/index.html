@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#111318">
+  <title>NovaOS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section id="welcome" class="welcome-screen">
+    <div class="welcome-actions">
+      <button id="enterOS" class="entry-button">Sistema Operacional</button>
+      <button id="specsButton" class="entry-button">Especificações técnicas</button>
+    </div>
+  </section>
+
+  <section id="specs" class="specs-screen hidden">
+    <button id="specsBack" class="entry-button specs-back">← Voltar</button>
+    <h1>Especificações técnicas</h1>
+    <div id="specsTabs" class="specs-tabs"></div>
+    <div id="specsDetail" class="specs-panel" aria-live="polite">Escolha um setor para ver o computador.</div>
+  </section>
+
+  <main id="desktop" class="desktop hidden">
+    <header class="topbar">
+      <div class="top-left"><span class="system-mark">●</span><strong>NovaOS</strong><span class="top-divider"></span><span id="activeAppLabel">Área de trabalho</span></div>
+      <div class="top-right"><span id="topDate"></span><span class="network-mark">●</span><span>Conectado</span></div>
+    </header>
+
+    <aside class="dock" aria-label="Aplicativos">
+      <button class="dock-item" data-app="files" title="Arquivos"><span class="app-icon files-icon">▰</span><small>Arquivos</small></button>
+      <button class="dock-item" data-app="browser" title="Navegador"><span class="app-icon browser-icon">◎</span><small>Navegador</small></button>
+      <button class="dock-item" data-app="calculator" title="Calculadora"><span class="app-icon calc-icon">▦</span><small>Calculadora</small></button>
+      <button class="dock-item" data-app="expenses" title="Gastos"><span class="app-icon expense-icon">R$</span><small>Gastos</small></button>
+      <button class="dock-item" data-app="notes" title="Notas"><span class="app-icon notes-icon">▤</span><small>Notas</small></button>
+      <button class="dock-item" data-app="about" title="Sobre"><span class="app-icon about-icon">i</span><small>Sobre</small></button>
+    </aside>
+
+    <section class="desktop-shortcuts">
+      <button data-app="files"><span class="shortcut-icon folder-icon">▰</span><span>Pasta pessoal</span></button>
+      <button data-app="browser"><span class="shortcut-icon browser-shortcut">◎</span><span>Navegador</span></button>
+      <button data-app="notes"><span class="shortcut-icon notes-shortcut">▤</span><span>Notas</span></button>
+    </section>
+
+    <div id="windowLayer" class="window-layer"></div>
+
+    <footer class="taskbar">
+      <button id="menuButton" class="menu-button" aria-label="Menu principal">▦</button>
+      <div id="taskApps" class="task-apps"></div>
+      <div class="task-right"><span class="wifi">◔</span><span>PT</span><span id="clock">00:00</span><button id="powerButton" title="Voltar à tela inicial">⏻</button></div>
+    </footer>
+
+    <div id="startMenu" class="start-menu hidden">
+      <div class="start-heading"><div class="user-avatar">U</div><div><strong>Usuário</strong><small>NovaOS Desktop</small></div></div>
+      <div class="start-search">⌕ <span>Pesquisar aplicativos</span></div>
+      <div class="start-section-label">APLICATIVOS</div>
+      <div class="start-grid">
+        <button data-app="files"><span class="menu-app-icon files-icon">▰</span><span>Arquivos</span></button>
+        <button data-app="browser"><span class="menu-app-icon browser-icon">◎</span><span>Navegador</span></button>
+        <button data-app="calculator"><span class="menu-app-icon calc-icon">▦</span><span>Calculadora</span></button>
+        <button data-app="expenses"><span class="menu-app-icon expense-icon">R$</span><span>Gastos</span></button>
+        <button data-app="notes"><span class="menu-app-icon notes-icon">▤</span><span>Notas</span></button>
+        <button data-app="about"><span class="menu-app-icon about-icon">i</span><span>Sobre</span></button>
+      </div>
+      <div class="start-bottom"><span>NovaOS 1.0</span><button id="startPower">⏻ Desligar</button></div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
