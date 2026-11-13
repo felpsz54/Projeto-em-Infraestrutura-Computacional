@@ -9,9 +9,28 @@
 </head>
 <body>
   <section id="welcome" class="welcome-screen">
-    <div class="welcome-actions">
-      <button id="enterOS" class="entry-button">Sistema Operacional</button>
-      <button id="specsButton" class="entry-button">Especificações técnicas</button>
+    <div class="welcome-card">
+      <div class="welcome-logo" aria-hidden="true">N</div>
+      <p class="welcome-eyebrow">Robertet Groupe · Infraestrutura de TI</p>
+      <h1 class="welcome-title">Bem-vindo ao NovaOS</h1>
+      <p class="welcome-text">Uma demonstração do ambiente corporativo planejado para o projeto. Explore o sistema operacional ou confira as especificações técnicas dos computadores de cada setor.</p>
+
+      <div class="welcome-actions">
+        <button id="enterOS" class="entry-button primary">
+          <span class="btn-icon">▶</span>
+          <span class="btn-label"><strong>Sistema Operacional</strong><small>Abrir a área de trabalho</small></span>
+        </button>
+        <button id="specsButton" class="entry-button">
+          <span class="btn-icon">▤</span>
+          <span class="btn-label"><strong>Especificações técnicas</strong><small>Hardware por setor</small></span>
+        </button>
+      </div>
+
+      <ul class="welcome-chips" aria-label="Resumo do projeto">
+        <li>54 computadores</li>
+        <li>6 perfis de uso</li>
+        <li>Windows 11 Pro</li>
+      </ul>
     </div>
   </section>
 
@@ -24,7 +43,7 @@
 
   <main id="desktop" class="desktop hidden">
     <header class="topbar">
-      <div class="top-left"><span class="system-mark">●</span><strong>NovaOS</strong><span class="top-divider"></span><span id="activeAppLabel">Área de trabalho</span></div>
+      <div class="top-left"><button id="osBack" class="top-back" title="Voltar para a tela inicial">← Voltar</button><span class="top-divider"></span><span class="system-mark">●</span><strong>NovaOS</strong><span class="top-divider"></span><span id="activeAppLabel">Área de trabalho</span></div>
       <div class="top-right"><span id="topDate"></span><span class="network-mark">●</span><span>Conectado</span></div>
     </header>
 

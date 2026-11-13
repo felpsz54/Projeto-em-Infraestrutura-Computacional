@@ -24,6 +24,7 @@ $$("[data-pc]").forEach(b => b.onclick = () => {
 });
 $("#specsButton").addEventListener("click", () => { $("#welcome").classList.add("hidden"); $("#specs").classList.remove("hidden"); });
 $("#specsBack").addEventListener("click", () => { $("#specs").classList.add("hidden"); $("#welcome").classList.remove("hidden"); });
+$("#osBack").addEventListener("click", leaveOS);
 $("#powerButton").addEventListener("click", leaveOS);
 $("#startPower").addEventListener("click", leaveOS);
 function leaveOS(){ $("#desktop").classList.add("hidden"); $("#welcome").classList.remove("hidden"); $("#startMenu").classList.add("hidden"); }
