@@ -517,4 +517,16 @@ https://www.robertet.com/
 
 **Projeto acadêmico — Robertet Groupe**
 
+Alfredo Henrique Ferreira -  2226202063
+Ianca Neves - 2326202881 
+Nathan Moura Vieira - 2225102755
+Felipe Policarpo da Conceiçao - 2223101591
+Jhonatan Padilha Gomes de Moraes - 2226200193
+Pedro Henrique Bula Alcântara - 2226200525
+Alexandre Silva dos Santos - 232601783 
+Anderson Nogueira da Silva - 2226203262
+Leonardo Vinícius Oliveira Leite - 2226201724
+
+
+
 *Redes de Computadores | Sistemas Operacionais | Arquitetura de Computadores | IoT*
